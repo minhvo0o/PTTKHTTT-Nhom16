@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace PTTKHTTT
 {
@@ -16,6 +17,12 @@ namespace PTTKHTTT
         public TextBox maKH;
         public CheckBox checkDuocTiem;
         public CheckBox checkDaTiem;
+        public String maDK;
+
+        SqlConnection sqlConn;
+        String str = "Data Source=MINHVOPC;Initial Catalog=TIEMNGUA;Integrated Security=True";
+        SqlDataAdapter dataAdapter = new SqlDataAdapter();
+
 
         public DateTimePicker dateTiem;
         public capNhatPhieuDKTiem()
@@ -29,24 +36,32 @@ namespace PTTKHTTT
             dateTiem = txtTgTiem;
         }
 
-        private void txtTgTiem_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
+            try
+            {
+                using (SqlCommand cmd = new SqlCommand("UPDATE dbo.PHIEUDANGKYTIEMCHUNG SET DUOCTIEM = @DUOCTIEM, DATIEM = @DATIEM WHERE MADK = @MADK", sqlConn))
+                {
+                    cmd.Parameters.AddWithValue("MADK", maDK);
+                    cmd.Parameters.AddWithValue("DUOCTIEM", chkDuocTiem.Checked);
 
-        }
+                    cmd.Parameters.AddWithValue("DATIEM", chkDaTiem.Checked);
+                    cmd.ExecuteNonQuery();
 
-        private void txtMaKH_TextChanged(object sender, EventArgs e)
-        {
-
+                    traCuuPhieuDKTiem.instance.loadData();
+                    MessageBox.Show("Cập nhật thành công!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void capNhatPhieuDKTiem_Load(object sender, EventArgs e)
         {
-
+            sqlConn = new SqlConnection(str);
+            sqlConn.Open();
         }
     }
 }

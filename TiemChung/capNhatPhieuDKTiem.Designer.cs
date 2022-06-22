@@ -76,7 +76,6 @@
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(217, 23);
             this.txtMaKH.TabIndex = 6;
-            this.txtMaKH.TextChanged += new System.EventHandler(this.txtMaKH_TextChanged);
             // 
             // txtTgTiem
             // 
@@ -85,7 +84,6 @@
             this.txtTgTiem.Name = "txtTgTiem";
             this.txtTgTiem.Size = new System.Drawing.Size(217, 23);
             this.txtTgTiem.TabIndex = 8;
-            this.txtTgTiem.ValueChanged += new System.EventHandler(this.txtTgTiem_ValueChanged);
             // 
             // btnXacNhan
             // 
@@ -127,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 343);
+            this.ClientSize = new System.Drawing.Size(338, 349);
             this.Controls.Add(this.chkDaTiem);
             this.Controls.Add(this.chkDuocTiem);
             this.Controls.Add(this.btnXacNhan);
