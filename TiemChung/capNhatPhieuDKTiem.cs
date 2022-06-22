@@ -44,12 +44,18 @@ namespace PTTKHTTT
                 {
                     cmd.Parameters.AddWithValue("MADK", maDK);
                     cmd.Parameters.AddWithValue("DUOCTIEM", chkDuocTiem.Checked);
-
                     cmd.Parameters.AddWithValue("DATIEM", chkDaTiem.Checked);
-                    cmd.ExecuteNonQuery();
 
-                    traCuuPhieuDKTiem.instance.loadData();
-                    MessageBox.Show("Cập nhật thành công!");
+                    if ((chkDuocTiem.Checked != true) && (chkDaTiem.Checked == true))  {
+                        cmd.Parameters.AddWithValue("DATIEM", chkDaTiem.Checked = false);
+                        MessageBox.Show("Cần được sự cho phép của bác sĩ trước khi tiêm");
+                    } 
+                    else
+                    {
+                        cmd.ExecuteNonQuery();
+                        traCuuPhieuDKTiem.instance.loadData();
+                        MessageBox.Show("Cập nhật thành công!");
+                    }
                 }
             }
             catch (Exception ex)

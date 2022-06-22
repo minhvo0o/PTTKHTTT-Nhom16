@@ -71,14 +71,17 @@
             // 
             // txtMaKH
             // 
+            this.txtMaKH.Enabled = false;
             this.txtMaKH.Location = new System.Drawing.Point(58, 111);
             this.txtMaKH.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(217, 23);
             this.txtMaKH.TabIndex = 6;
+            this.txtMaKH.TabStop = false;
             // 
             // txtTgTiem
             // 
+            this.txtTgTiem.Enabled = false;
             this.txtTgTiem.Location = new System.Drawing.Point(58, 257);
             this.txtTgTiem.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtTgTiem.Name = "txtTgTiem";
