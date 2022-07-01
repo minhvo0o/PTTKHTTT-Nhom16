@@ -31,11 +31,6 @@ namespace PTTKHTTT
             instance = this;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void traCuuPhieuDKTiem_Load(object sender, EventArgs e)
         {
             sqlConn = new SqlConnection(str);
