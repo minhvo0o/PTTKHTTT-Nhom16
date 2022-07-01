@@ -32,7 +32,7 @@
             this.lblMaKH = new System.Windows.Forms.Label();
             this.lblTgTiem = new System.Windows.Forms.Label();
             this.txtMaKH = new System.Windows.Forms.TextBox();
-            this.txtTgTiem = new System.Windows.Forms.DateTimePicker();
+            this.timeTgTiem = new System.Windows.Forms.DateTimePicker();
             this.btnXacNhan = new System.Windows.Forms.Button();
             this.chkDuocTiem = new System.Windows.Forms.CheckBox();
             this.chkDaTiem = new System.Windows.Forms.CheckBox();
@@ -79,14 +79,14 @@
             this.txtMaKH.TabIndex = 6;
             this.txtMaKH.TabStop = false;
             // 
-            // txtTgTiem
+            // timeTgTiem
             // 
-            this.txtTgTiem.Enabled = false;
-            this.txtTgTiem.Location = new System.Drawing.Point(58, 257);
-            this.txtTgTiem.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.txtTgTiem.Name = "txtTgTiem";
-            this.txtTgTiem.Size = new System.Drawing.Size(217, 23);
-            this.txtTgTiem.TabIndex = 8;
+            this.timeTgTiem.Enabled = false;
+            this.timeTgTiem.Location = new System.Drawing.Point(58, 257);
+            this.timeTgTiem.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.timeTgTiem.Name = "timeTgTiem";
+            this.timeTgTiem.Size = new System.Drawing.Size(217, 23);
+            this.timeTgTiem.TabIndex = 8;
             // 
             // btnXacNhan
             // 
@@ -132,7 +132,7 @@
             this.Controls.Add(this.chkDaTiem);
             this.Controls.Add(this.chkDuocTiem);
             this.Controls.Add(this.btnXacNhan);
-            this.Controls.Add(this.txtTgTiem);
+            this.Controls.Add(this.timeTgTiem);
             this.Controls.Add(this.txtMaKH);
             this.Controls.Add(this.lblTgTiem);
             this.Controls.Add(this.lblMaKH);
@@ -152,7 +152,7 @@
         private Label lblMaKH;
         private Label lblTgTiem;
         private TextBox txtMaKH;
-        private DateTimePicker txtTgTiem;
+        private DateTimePicker timeTgTiem;
         private Button btnXacNhan;
         private CheckBox chkDuocTiem;
         private CheckBox chkDaTiem;

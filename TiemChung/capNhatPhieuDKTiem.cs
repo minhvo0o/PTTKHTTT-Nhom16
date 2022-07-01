@@ -33,7 +33,7 @@ namespace PTTKHTTT
 
             checkDuocTiem = chkDuocTiem;
             checkDaTiem = chkDaTiem;
-            dateTiem = txtTgTiem;
+            dateTiem = timeTgTiem;
         }
 
         private void btnXacNhan_Click(object sender, EventArgs e)
