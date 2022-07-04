@@ -18,12 +18,11 @@ namespace WinFormsApp1
 
         private string connectionString = @"Data Source=PHONG\SQLEXPRESS; Initial Catalog=TIEMNGUA;Integrated Security=True;";
         private string cmdStr = @"
-                select distinct hd.mahd, kh.hoten, g.tengoitiem,
-                hd.tongtien, hd.trangthai
+                select distinct *
                 from Hoadon hd, Phieudangkytiemchung pdk, CT_Dangki_goitiem dk_gt, 
-                Goitiemchung g, ct_goitiemchung ct_g, vacxin vx, khach_hang kh
+                Goitiemchung g, khach_hang kh
                 where hd.maphieudk = pdk.madk and pdk.madk = dk_gt.madk and dk_gt.magtc = g.magtc 
-                and ct_g.magtc = g.magtc and ct_g.mavx = vx.mavx and kh.makh = hd.makh ";
+                and kh.makh = hd.makh ";
 
         public MHDSHoaDon()
         {
@@ -43,8 +42,32 @@ namespace WinFormsApp1
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
 
             DataTable dttb1 = new DataTable();
-
             adapter.Fill(dttb1);
+
+            DataTable dttb2 = new DataTable();
+
+            int i = 0;
+            int n = dttb1.Rows.Count;
+            while (i< n)
+            {
+                bool flag = false;
+                DataRow row = dttb1.Rows[i];
+                if (i< n - 1)
+                {
+                    if (row["mahd"].ToString() == dttb1.Rows[i+1]["mahd"].ToString()){
+                        flag = true;
+                    }
+                }
+                if (flag)
+                {
+                    dttb1.Rows[i].SetField("tengoitiem", row["tengoitiem"].ToString() + "  " 
+                        + dttb1.Rows[i + 1]["tengoitiem"]);
+                    dttb1.Rows[i + 1].Delete();
+                    i++;
+                }
+                i++;
+            }
+
             dtgv1.DataSource = dttb1;
             sqlCon.Close();
         }

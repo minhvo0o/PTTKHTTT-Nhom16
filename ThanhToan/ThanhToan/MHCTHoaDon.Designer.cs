@@ -194,6 +194,7 @@
             this.registerCode_txt.Name = "registerCode_txt";
             this.registerCode_txt.Size = new System.Drawing.Size(209, 34);
             this.registerCode_txt.TabIndex = 5;
+            this.registerCode_txt.Leave += new System.EventHandler(this.registerCode_txt_Leave);
             // 
             // clientName_txt
             // 
@@ -361,8 +362,8 @@
             this.installmentPayment_CB.ForeColor = System.Drawing.Color.Black;
             this.installmentPayment_CB.FormattingEnabled = true;
             this.installmentPayment_CB.Items.AddRange(new object[] {
-            "  Thanh toán một lần",
-            "  Trả góp theo đợt"});
+            "Thanh toán một lần",
+            "Trả góp theo đợt"});
             this.installmentPayment_CB.Location = new System.Drawing.Point(286, 31);
             this.installmentPayment_CB.Name = "installmentPayment_CB";
             this.installmentPayment_CB.Size = new System.Drawing.Size(209, 36);
@@ -742,8 +743,8 @@
             this.paymentMethod_CB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.paymentMethod_CB.FormattingEnabled = true;
             this.paymentMethod_CB.Items.AddRange(new object[] {
-            "  Tiền mặt",
-            "  Thẻ tín dụng"});
+            "Tiền mặt",
+            "Thẻ tín dụng"});
             this.paymentMethod_CB.Location = new System.Drawing.Point(3, 31);
             this.paymentMethod_CB.Name = "paymentMethod_CB";
             this.paymentMethod_CB.Size = new System.Drawing.Size(208, 36);

@@ -33,17 +33,19 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dtgv1 = new System.Windows.Forms.DataGridView();
-            this.mahd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tengoitiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Trangthai = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.searchText = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.searchBtn = new System.Windows.Forms.Label();
             this.createBtn = new System.Windows.Forms.Button();
             this.title2 = new System.Windows.Forms.Label();
+            this.mahd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tengoitiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentMethod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.installmentPayment = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Trangthai = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv1)).BeginInit();
@@ -85,6 +87,8 @@
             this.hoten,
             this.tengoitiem,
             this.Tongtien,
+            this.paymentMethod,
+            this.installmentPayment,
             this.Trangthai});
             this.dtgv1.Location = new System.Drawing.Point(54, 197);
             this.dtgv1.MultiSelect = false;
@@ -95,52 +99,9 @@
             this.dtgv1.RowTemplate.Height = 100;
             this.dtgv1.RowTemplate.ReadOnly = true;
             this.dtgv1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv1.Size = new System.Drawing.Size(719, 257);
+            this.dtgv1.Size = new System.Drawing.Size(885, 317);
             this.dtgv1.TabIndex = 0;
             this.dtgv1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv1_CellDoubleClick);
-            // 
-            // mahd
-            // 
-            this.mahd.DataPropertyName = "mahd";
-            this.mahd.FillWeight = 45F;
-            this.mahd.HeaderText = "Mã hoá đơn";
-            this.mahd.MinimumWidth = 6;
-            this.mahd.Name = "mahd";
-            this.mahd.ReadOnly = true;
-            // 
-            // hoten
-            // 
-            this.hoten.DataPropertyName = "hoten";
-            this.hoten.HeaderText = "Họ tên khách hàng";
-            this.hoten.MinimumWidth = 6;
-            this.hoten.Name = "hoten";
-            this.hoten.ReadOnly = true;
-            // 
-            // tengoitiem
-            // 
-            this.tengoitiem.DataPropertyName = "tengoitiem";
-            this.tengoitiem.HeaderText = "Gói Tiêm";
-            this.tengoitiem.MinimumWidth = 6;
-            this.tengoitiem.Name = "tengoitiem";
-            this.tengoitiem.ReadOnly = true;
-            // 
-            // Tongtien
-            // 
-            this.Tongtien.DataPropertyName = "Tongtien";
-            this.Tongtien.FillWeight = 70F;
-            this.Tongtien.HeaderText = "Tổng tiền";
-            this.Tongtien.MinimumWidth = 6;
-            this.Tongtien.Name = "Tongtien";
-            this.Tongtien.ReadOnly = true;
-            // 
-            // Trangthai
-            // 
-            this.Trangthai.DataPropertyName = "Trangthai";
-            this.Trangthai.FillWeight = 50F;
-            this.Trangthai.HeaderText = "Hoàn Tất Thanh Toán";
-            this.Trangthai.MinimumWidth = 6;
-            this.Trangthai.Name = "Trangthai";
-            this.Trangthai.ReadOnly = true;
             // 
             // searchBox
             // 
@@ -153,7 +114,7 @@
             this.searchBox.ForeColor = System.Drawing.Color.Black;
             this.searchBox.Location = new System.Drawing.Point(119, 81);
             this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(579, 36);
+            this.searchBox.Size = new System.Drawing.Size(745, 36);
             this.searchBox.TabIndex = 1;
             this.searchBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.searchBox_MouseClick);
             this.searchBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchBox_KeyDown_1);
@@ -186,7 +147,7 @@
             this.searchBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.searchBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.searchBtn.Image = ((System.Drawing.Image)(resources.GetObject("searchBtn.Image")));
-            this.searchBtn.Location = new System.Drawing.Point(626, 85);
+            this.searchBtn.Location = new System.Drawing.Point(792, 85);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(67, 28);
             this.searchBtn.TabIndex = 3;
@@ -222,10 +183,74 @@
             this.title2.TabIndex = 5;
             this.title2.Text = "DANH SÁCH HOÁ ĐƠN";
             // 
+            // mahd
+            // 
+            this.mahd.DataPropertyName = "mahd";
+            this.mahd.FillWeight = 45F;
+            this.mahd.HeaderText = "Mã hoá đơn";
+            this.mahd.MinimumWidth = 6;
+            this.mahd.Name = "mahd";
+            this.mahd.ReadOnly = true;
+            // 
+            // hoten
+            // 
+            this.hoten.DataPropertyName = "hoten";
+            this.hoten.HeaderText = "Họ tên khách hàng";
+            this.hoten.MinimumWidth = 6;
+            this.hoten.Name = "hoten";
+            this.hoten.ReadOnly = true;
+            // 
+            // tengoitiem
+            // 
+            this.tengoitiem.DataPropertyName = "tengoitiem";
+            this.tengoitiem.FillWeight = 80F;
+            this.tengoitiem.HeaderText = "Gói Tiêm";
+            this.tengoitiem.MinimumWidth = 6;
+            this.tengoitiem.Name = "tengoitiem";
+            this.tengoitiem.ReadOnly = true;
+            // 
+            // Tongtien
+            // 
+            this.Tongtien.DataPropertyName = "Tongtien";
+            this.Tongtien.FillWeight = 90F;
+            this.Tongtien.HeaderText = "Tổng tiền";
+            this.Tongtien.MinimumWidth = 6;
+            this.Tongtien.Name = "Tongtien";
+            this.Tongtien.ReadOnly = true;
+            // 
+            // paymentMethod
+            // 
+            this.paymentMethod.DataPropertyName = "ppthanhtoan";
+            this.paymentMethod.FillWeight = 70F;
+            this.paymentMethod.HeaderText = "Phương Pháp Thanh Toán";
+            this.paymentMethod.MinimumWidth = 6;
+            this.paymentMethod.Name = "paymentMethod";
+            this.paymentMethod.ReadOnly = true;
+            this.paymentMethod.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.paymentMethod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // installmentPayment
+            // 
+            this.installmentPayment.DataPropertyName = "tragop";
+            this.installmentPayment.FillWeight = 45F;
+            this.installmentPayment.HeaderText = "Trả góp";
+            this.installmentPayment.MinimumWidth = 6;
+            this.installmentPayment.Name = "installmentPayment";
+            this.installmentPayment.ReadOnly = true;
+            // 
+            // Trangthai
+            // 
+            this.Trangthai.DataPropertyName = "Trangthai";
+            this.Trangthai.FillWeight = 50F;
+            this.Trangthai.HeaderText = "Hoàn Tất Thanh Toán";
+            this.Trangthai.MinimumWidth = 6;
+            this.Trangthai.Name = "Trangthai";
+            this.Trangthai.ReadOnly = true;
+            // 
             // MHDSHoaDon
             // 
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(820, 466);
+            this.ClientSize = new System.Drawing.Size(986, 526);
             this.Controls.Add(this.title2);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.searchBtn);
@@ -258,6 +283,8 @@
         private DataGridViewTextBoxColumn hoten;
         private DataGridViewTextBoxColumn tengoitiem;
         private DataGridViewTextBoxColumn Tongtien;
+        private DataGridViewTextBoxColumn paymentMethod;
+        private DataGridViewCheckBoxColumn installmentPayment;
         private DataGridViewCheckBoxColumn Trangthai;
     }
 }

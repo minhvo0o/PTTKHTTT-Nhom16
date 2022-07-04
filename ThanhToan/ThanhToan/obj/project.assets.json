@@ -2528,11 +2528,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\code\\PA_\\WinFormsApp1\\WinFormsApp1\\ThanhToan.csproj",
+      "projectUniqueName": "F:\\code\\PA_\\ThanhToan\\ThanhToan\\ThanhToan.csproj",
       "projectName": "ThanhToan",
-      "projectPath": "F:\\code\\PA_\\WinFormsApp1\\WinFormsApp1\\ThanhToan.csproj",
+      "projectPath": "F:\\code\\PA_\\ThanhToan\\ThanhToan\\ThanhToan.csproj",
       "packagesPath": "C:\\Users\\MSI MODERN15\\.nuget\\packages\\",
-      "outputPath": "F:\\code\\PA_\\WinFormsApp1\\WinFormsApp1\\obj\\",
+      "outputPath": "F:\\code\\PA_\\ThanhToan\\ThanhToan\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MSI MODERN15\\AppData\\Roaming\\NuGet\\NuGet.Config",
