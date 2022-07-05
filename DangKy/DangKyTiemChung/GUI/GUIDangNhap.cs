@@ -70,7 +70,8 @@ namespace DangKyTiemChung.GUI
 
         private void GUIDangNhap_Load(object sender, EventArgs e)
         {
-
+            sadjajwdpojapwodjdjpaowjdojjwodopwpodpwq445
+                qjowdpoqjwdpojqpwdjpowqojqwopdjpqwpoqwdjp
         }
     }
 }
