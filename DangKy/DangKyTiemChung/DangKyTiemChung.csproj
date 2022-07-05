@@ -67,6 +67,12 @@
     <Compile Include="DAL\PhieuTiemDB.cs" />
     <Compile Include="DAL\TaiKhoan.cs" />
     <Compile Include="DAL\VacXinDB.cs" />
+    <Compile Include="GUI\GUIKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUIKhachHang.Designer.cs">
+      <DependentUpon>GUIKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUIDangKyKH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUIGoiTiem.resx">
       <DependentUpon>GUIGoiTiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUIKhachHang.resx">
+      <DependentUpon>GUIKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUILapPhieuTiem.resx">
       <DependentUpon>GUILapPhieuTiem.cs</DependentUpon>

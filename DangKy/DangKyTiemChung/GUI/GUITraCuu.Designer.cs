@@ -52,8 +52,7 @@ namespace DangKyTiemChung.GUI
             this.view_dskhachhang.RowTemplate.Height = 24;
             this.view_dskhachhang.Size = new System.Drawing.Size(500, 384);
             this.view_dskhachhang.TabIndex = 0;
-            this.view_dskhachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.view_dskhachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.view_dskhachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_dskhachhang_CellClick);
             // 
             // bt_xem
             // 
@@ -118,7 +117,7 @@ namespace DangKyTiemChung.GUI
             this.bt_timkiem.UseVisualStyleBackColor = true;
             this.bt_timkiem.Click += new System.EventHandler(this.timkiem_Click);
             // 
-            // TraCuu
+            // GUITraCuu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,7 +132,7 @@ namespace DangKyTiemChung.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "TraCuu";
+            this.Name = "GUITraCuu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TraCuu";
             this.Load += new System.EventHandler(this.TraCuu_Load);

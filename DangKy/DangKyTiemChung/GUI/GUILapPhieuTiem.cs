@@ -26,11 +26,16 @@ namespace DangKyTiemChung.GUI
             radio_goi.Checked = true;
             ten.Text = GUITraCuu.hoten;
             makh.Text = GUITraCuu.makh;
+            if(GUITraCuu.makh == null)
+            {
+                ten.Text = GUIDangNhap.hoten;
+                makh.Text = GUIDangNhap.ma;
+            }
             LoadData();
         }
         private void LoadData()
         {
-            if (radio_le2.Checked == true)
+            if (radio_le.Checked == true)
             {
                 DataTable dt = new DataTable();
                 dt.Columns.Add("STT", typeof(int));
@@ -62,9 +67,9 @@ namespace DangKyTiemChung.GUI
             }
 
         }
-        private void button3_Click(object sender, EventArgs e)
+        private void Them_Click(object sender, EventArgs e)
         {
-            if(radio_le2.Checked == true)
+            if(radio_le.Checked == true)
             {
                 MHVacXin f = new MHVacXin();
                 f.ShowDialog();
@@ -78,49 +83,52 @@ namespace DangKyTiemChung.GUI
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void xacnhan_Click(object sender, EventArgs e)
         {
             if(view_danhsach.Rows.Count > 0)
             {
 
             string makh = GUITraCuu.makh;
+                if (makh == null)
+                    makh = GUIDangNhap.ma;
             string mapt = "PT" + PhieuTiem.CountPT().ToString();
             DateTime thoigiantiem = thoigian.Value;
             PhieuTiem pt = new PhieuTiem(makh, mapt, MHGoiTiem.listgt, MHVacXin.listvx, thoigiantiem);
-            try
-            {
-                bool checkpt = PhieuTiem.ThemPT(pt);
-                if(checkpt == true)
+                try
                 {
-                    if(radio_goi.Checked == true)
+                    bool checkpt = PhieuTiem.ThemPT(pt);
+                    if (checkpt == true)
                     {
-                        int index = 0;
-                        foreach(var item in pt._goitiem)
+                        if (radio_goi.Checked == true)
                         {
-                            PhieuTiem.ThemCT_GT(pt, index);
-                            index++;
+                            int index = 0;
+                            foreach (var item in pt._goitiem)
+                            {
+                                PhieuTiem.ThemCT_GT(pt, index);
+                                index++;
+                            }
                         }
-                    }
-                    else if(radio_le2.Checked == true){
-                        int index = 0;
-                        foreach (var item in pt._vacxin)
+                        else if (radio_le.Checked == true)
                         {
-                            PhieuTiem.ThemCT_VX(pt, index);
-                            index++;
+                            int index = 0;
+                            foreach (var item in pt._vacxin)
+                            {
+                                PhieuTiem.ThemCT_VX(pt, index);
+                                index++;
+                            }
                         }
-                    }
-                    MessageBox.Show("Thêm thành công");
+                        MessageBox.Show("Thêm thành công");
 
+                    }
+                    else
+                    {
+                        MessageBox.Show("ERROR!");
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("ERROR!");
-                }
-            }
-            catch (Exception ex)
-            {
 
-            }
+                }
             this.Close();
             }
             else
@@ -129,22 +137,15 @@ namespace DangKyTiemChung.GUI
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void huy_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void radio_goi_CheckedChanged(object sender, EventArgs e)
         {
             LoadData();
         }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            LoadData();
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void radio_le_CheckedChanged(object sender, EventArgs e)
         {
             LoadData();
         }
@@ -157,7 +158,7 @@ namespace DangKyTiemChung.GUI
                 _stt = -1;
                 LoadData();
             }
-            else if(radio_le2.Checked == true && _stt > 0)
+            else if(radio_le.Checked == true && _stt > 0)
             {
                 MHVacXin.listvx.RemoveAt(_stt - 1);
                 _stt = -1;
@@ -165,7 +166,7 @@ namespace DangKyTiemChung.GUI
             }
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void view_danhsach_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -182,9 +183,6 @@ namespace DangKyTiemChung.GUI
             }
         }
 
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }

@@ -31,7 +31,7 @@ namespace DangKyTiemChung.GUI
         {
             this.them = new System.Windows.Forms.Button();
             this.view_danhsach = new System.Windows.Forms.DataGridView();
-            this.radio_le2 = new System.Windows.Forms.RadioButton();
+            this.radio_le = new System.Windows.Forms.RadioButton();
             this.radio_goi = new System.Windows.Forms.RadioButton();
             this.thoigian = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@ namespace DangKyTiemChung.GUI
             this.them.TabIndex = 31;
             this.them.Text = "Thêm";
             this.them.UseVisualStyleBackColor = true;
-            this.them.Click += new System.EventHandler(this.button3_Click);
+            this.them.Click += new System.EventHandler(this.Them_Click);
             // 
             // view_danhsach
             // 
@@ -69,20 +69,20 @@ namespace DangKyTiemChung.GUI
             this.view_danhsach.RowTemplate.Height = 24;
             this.view_danhsach.Size = new System.Drawing.Size(564, 192);
             this.view_danhsach.TabIndex = 30;
-            this.view_danhsach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.view_danhsach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_danhsach_CellClick);
             // 
-            // radio_le2
+            // radio_le
             // 
-            this.radio_le2.AutoSize = true;
-            this.radio_le2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_le2.Location = new System.Drawing.Point(176, 188);
-            this.radio_le2.Name = "radio_le2";
-            this.radio_le2.Size = new System.Drawing.Size(92, 24);
-            this.radio_le2.TabIndex = 29;
-            this.radio_le2.TabStop = true;
-            this.radio_le2.Text = "Tiêm lẻ";
-            this.radio_le2.UseVisualStyleBackColor = true;
-            this.radio_le2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radio_le.AutoSize = true;
+            this.radio_le.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_le.Location = new System.Drawing.Point(176, 188);
+            this.radio_le.Name = "radio_le";
+            this.radio_le.Size = new System.Drawing.Size(92, 24);
+            this.radio_le.TabIndex = 29;
+            this.radio_le.TabStop = true;
+            this.radio_le.Text = "Tiêm lẻ";
+            this.radio_le.UseVisualStyleBackColor = true;
+            this.radio_le.CheckedChanged += new System.EventHandler(this.radio_le_CheckedChanged);
             // 
             // radio_goi
             // 
@@ -95,7 +95,7 @@ namespace DangKyTiemChung.GUI
             this.radio_goi.TabStop = true;
             this.radio_goi.Text = "Tiêm gói";
             this.radio_goi.UseVisualStyleBackColor = true;
-            this.radio_goi.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radio_goi.CheckedChanged += new System.EventHandler(this.radio_goi_CheckedChanged);
             // 
             // thoigian
             // 
@@ -106,7 +106,6 @@ namespace DangKyTiemChung.GUI
             this.thoigian.Name = "thoigian";
             this.thoigian.Size = new System.Drawing.Size(200, 27);
             this.thoigian.TabIndex = 27;
-            this.thoigian.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // label9
             // 
@@ -157,7 +156,7 @@ namespace DangKyTiemChung.GUI
             this.huy.TabIndex = 22;
             this.huy.Text = "Hủy ";
             this.huy.UseVisualStyleBackColor = true;
-            this.huy.Click += new System.EventHandler(this.button2_Click);
+            this.huy.Click += new System.EventHandler(this.huy_Click);
             // 
             // xacnhan
             // 
@@ -168,7 +167,7 @@ namespace DangKyTiemChung.GUI
             this.xacnhan.TabIndex = 21;
             this.xacnhan.Text = "Xác nhận";
             this.xacnhan.UseVisualStyleBackColor = true;
-            this.xacnhan.Click += new System.EventHandler(this.button1_Click);
+            this.xacnhan.Click += new System.EventHandler(this.xacnhan_Click);
             // 
             // label2
             // 
@@ -200,7 +199,7 @@ namespace DangKyTiemChung.GUI
             this.xoa.UseVisualStyleBackColor = true;
             this.xoa.Click += new System.EventHandler(this.xoa_Click);
             // 
-            // LapPhieuTiem
+            // GUILapPhieuTiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -210,7 +209,7 @@ namespace DangKyTiemChung.GUI
             this.Controls.Add(this.label2);
             this.Controls.Add(this.them);
             this.Controls.Add(this.view_danhsach);
-            this.Controls.Add(this.radio_le2);
+            this.Controls.Add(this.radio_le);
             this.Controls.Add(this.radio_goi);
             this.Controls.Add(this.thoigian);
             this.Controls.Add(this.label9);
@@ -222,7 +221,7 @@ namespace DangKyTiemChung.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "LapPhieuTiem";
+            this.Name = "GUILapPhieuTiem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LapPhieuTiem";
             this.Load += new System.EventHandler(this.LapPhieuTiem_Load);
@@ -236,7 +235,7 @@ namespace DangKyTiemChung.GUI
 
         private System.Windows.Forms.Button them;
         private System.Windows.Forms.DataGridView view_danhsach;
-        private System.Windows.Forms.RadioButton radio_le2;
+        private System.Windows.Forms.RadioButton radio_le;
         private System.Windows.Forms.RadioButton radio_goi;
         private System.Windows.Forms.DateTimePicker thoigian;
         private System.Windows.Forms.Label label9;

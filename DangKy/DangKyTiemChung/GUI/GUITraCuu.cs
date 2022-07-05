@@ -53,7 +53,16 @@ namespace DangKyTiemChung.GUI
             view_dskhachhang.DataSource = dt;
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+
+        private void timkiem_Click(object sender, EventArgs e)
+        {
+            string info = thongtintimkiem.Text;
+            DataTable dt = new DataTable();
+            KhachHang.TraCuuKH(info).Fill(dt);
+            view_dskhachhang.DataSource = dt;
+        }
+
+        private void view_dskhachhang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -65,28 +74,10 @@ namespace DangKyTiemChung.GUI
                     hoten = view_dskhachhang.Rows[e.RowIndex].Cells["HoTen"].FormattedValue.ToString();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
-        private void timkiem_Click(object sender, EventArgs e)
-        {
-            string info = thongtintimkiem.Text;
-            DataTable dt = new DataTable();
-            KhachHang.TraCuuKH(info).Fill(dt);
-            view_dskhachhang.DataSource = dt;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

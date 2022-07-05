@@ -64,7 +64,7 @@ namespace DangKyTiemChung.GUI
             this.xemphieu.TabIndex = 72;
             this.xemphieu.Text = "Xem phiếu tiêm";
             this.xemphieu.UseVisualStyleBackColor = true;
-            this.xemphieu.Click += new System.EventHandler(this.lapphieu_Click);
+            this.xemphieu.Click += new System.EventHandler(this.xemphieu_Click);
             // 
             // diachi
             // 
@@ -292,7 +292,7 @@ namespace DangKyTiemChung.GUI
             this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 48;
             // 
-            // XemThongTinKH
+            // GUIXemThongTinKH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -324,7 +324,7 @@ namespace DangKyTiemChung.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "XemThongTinKH";
+            this.Name = "GUIXemThongTinKH";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "XemThongTinKH";
             this.Load += new System.EventHandler(this.XemThongTinKH_Load);

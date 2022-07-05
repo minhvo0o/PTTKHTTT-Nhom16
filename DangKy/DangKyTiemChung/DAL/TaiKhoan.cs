@@ -27,6 +27,23 @@ namespace DangKyTiemChung.DAL
             }
             return null;
         }
+        public static string GetId(string tk, string mk)
+        {
+            ConnectionDB db = new ConnectionDB();
+            db.connectSql();
+            string sql = "Select id from TAIKHOAN where taikhoan = @tk and matkhau = @mk";
+            SqlCommand com = new SqlCommand(sql, db.sqlCon);
+            com.Parameters.AddWithValue("@tk", tk);
+            com.Parameters.AddWithValue("@mk", mk);
+            com.CommandType = CommandType.Text;
+            SqlDataReader reader = com.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows)
+            {
+                return reader.GetString(0);
+            }
+            return null;
+        }
         public static string GetRoleNhanVien(string tk, string mk)
         {
             ConnectionDB db = new ConnectionDB();

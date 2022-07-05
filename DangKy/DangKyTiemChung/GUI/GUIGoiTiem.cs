@@ -55,7 +55,9 @@ namespace DangKyTiemChung.GUI
             this.Close();
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+
+
+        private void view_goitiem_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (view_goitiem.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {

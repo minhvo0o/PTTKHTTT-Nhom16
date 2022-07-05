@@ -22,38 +22,40 @@ namespace DangKyTiemChung.GUI
         {
             try
             {
-
-            KhachHang kh = KhachHang.LayTT_KH(GUITraCuu.makh);         
-            makh.Text = kh._makh;
-            ten.Text = kh._hoten;
-            diachi.Text = kh._diachi;
-            sdt.Text = kh._sdt;
-            dateTimePicker1.Value = kh._ngaysinh;
-            if (kh._gioitinh == "Nam")
-            {
-                radio_male.Checked = true;
+                string _makh = GUITraCuu.makh;
+                if (_makh == null)
+                    _makh = GUIDangNhap.ma;
+                KhachHang kh = KhachHang.LayTT_KH(_makh);
+                makh.Text = kh._makh;
+                ten.Text = kh._hoten;
+                diachi.Text = kh._diachi;
+                sdt.Text = kh._sdt;
+                dateTimePicker1.Value = kh._ngaysinh;
+                if (kh._gioitinh == "Nam")
+                {
+                    radio_male.Checked = true;
+                }
+                else
+                    radio_female.Checked = true;
+                if (NguoiGiamHo.CheckNGH(_makh) == true)
+                {
+                    NguoiGiamHo ngh = NguoiGiamHo.LayTT_NGH(_makh);
+                    tenngh.Text = ngh._hoten;
+                    mqh.Text = ngh._mqh;
+                    sdtngh.Text = ngh._sdt;
+                }
+                else
+                {
+                    tenngh.Hide();
+                    mqh.Hide();
+                    sdtngh.Hide();
+                    label6.Hide();
+                    label7.Hide();
+                    label8.Hide();
+                    label10.Hide();
+                }
             }
-            else
-                radio_female.Checked = true;
-            if(NguoiGiamHo.CheckNGH(GUITraCuu.makh) == true)
-            {
-                NguoiGiamHo ngh = NguoiGiamHo.LayTT_NGH(GUITraCuu.makh);
-                tenngh.Text = ngh._hoten;
-                mqh.Text = ngh._mqh;
-                sdtngh.Text = ngh._sdt;
-            }
-            else
-            {
-                tenngh.Hide();
-                mqh.Hide();
-                sdtngh.Hide();
-                label6.Hide();
-                label7.Hide();
-                label8.Hide();
-                label10.Hide();
-            }
-            }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("ERROR!");
                 this.Close();
@@ -61,7 +63,7 @@ namespace DangKyTiemChung.GUI
                  
         }
 
-        private void lapphieu_Click(object sender, EventArgs e)
+        private void xemphieu_Click(object sender, EventArgs e)
         {
             GUIXemPhieuTiem f = new GUIXemPhieuTiem();
             f.ShowDialog();

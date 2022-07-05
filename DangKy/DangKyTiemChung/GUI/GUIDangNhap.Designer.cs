@@ -95,7 +95,7 @@ namespace DangKyTiemChung.GUI
             this.dn.UseVisualStyleBackColor = true;
             this.dn.Click += new System.EventHandler(this.dn_Click);
             // 
-            // DangNhap
+            // GUIDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -109,10 +109,10 @@ namespace DangKyTiemChung.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "DangNhap";
+            this.Name = "GUIDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
-            this.Load += new System.EventHandler(this.DangNhap_Load);
+            this.Load += new System.EventHandler(this.GUIDangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
