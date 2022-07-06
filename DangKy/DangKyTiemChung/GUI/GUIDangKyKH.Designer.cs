@@ -248,9 +248,11 @@ namespace DangKyTiemChung.GUI
             this.radio_ngh.TabIndex = 45;
             this.radio_ngh.Text = "Người giám hộ";
             this.radio_ngh.UseVisualStyleBackColor = true;
+            this.radio_ngh.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             this.radio_ngh.CursorChanged += new System.EventHandler(this.radioButton3_Click);
             this.radio_ngh.EnabledChanged += new System.EventHandler(this.radioButton3_Click);
             this.radio_ngh.Click += new System.EventHandler(this.radioButton3_Click);
+            this.radio_ngh.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radioButton3_MouseClick);
             // 
             // panel1
             // 

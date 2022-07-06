@@ -104,57 +104,78 @@ C:\Users\nhoxc\Downloads\tiemchung-main\DangKyTiemChung\obj\Debug\DangKyTiemChun
 C:\Users\nhoxc\Downloads\tiemchung-main\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.CopyComplete
 C:\Users\nhoxc\Downloads\tiemchung-main\DangKyTiemChung\obj\Debug\DangKyTiemChung.exe
 C:\Users\nhoxc\Downloads\tiemchung-main\DangKyTiemChung\obj\Debug\DangKyTiemChung.pdb
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.AssemblyReference.cache
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.exe.config
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIDangKyKH.resources
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIDangNhap.resources
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.MHGoiTiem.resources
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUILapPhieuTiem.resources
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUITraCuu.resources
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.MHVacXin.resources
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIXemPhieuTiem.resources
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIXemThongTinKH.resources
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.Properties.Resources.resources
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.GenerateResource.cache
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.CoreCompileInputs.cache
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.exe
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.pdb
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\DangKyTiemChung.exe.config
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\DangKyTiemChung.exe
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\DangKyTiemChung.pdb
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.Data.Tools.Components.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.Data.Tools.Schema.Sql.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.Data.Tools.Utilities.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.Build.Framework.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.Build.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\System.Collections.Immutable.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\System.Text.Json.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.NET.StringTools.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\System.Memory.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\System.Threading.Tasks.Dataflow.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\System.Buffers.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\cs\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\de\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\en\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\es\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\fr\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\it\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\ja\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\ko\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\pl\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\pt-BR\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\ru\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\tr\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\zh-Hans\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\bin\Debug\zh-Hant\Microsoft.Build.resources.dll
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.CopyComplete
-C:\Users\nhoxc\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIKhachHang.resources
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\bin\Debug\DangKyTiemChung.exe.config
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\bin\Debug\DangKyTiemChung.exe
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\bin\Debug\DangKyTiemChung.pdb
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\bin\Debug\Microsoft.Data.Tools.Components.dll
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.AssemblyReference.cache
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.SuggestedBindingRedirects.cache
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIDangKyKH.resources
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIDangNhap.resources
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.MHGoiTiem.resources
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUILapPhieuTiem.resources
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUITraCuu.resources
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.MHVacXin.resources
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIXemPhieuTiem.resources
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIXemThongTinKH.resources
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.Properties.Resources.resources
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.GenerateResource.cache
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.CoreCompileInputs.cache
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.CopyComplete
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.exe
+C:\Users\VO DUC MINH\Downloads\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.pdb
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.AssemblyReference.cache
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.exe.config
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUICapNhatPhieuDKTiem.resources
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUITraCuuPhieuDKTiem.resources
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIDangKyKH.resources
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIDangNhap.resources
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.MHGoiTiem.resources
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUILapPhieuTiem.resources
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUITraCuu.resources
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.MHVacXin.resources
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIXemPhieuTiem.resources
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.GUI.GUIXemThongTinKH.resources
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.Properties.Resources.resources
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.GenerateResource.cache
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.CoreCompileInputs.cache
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.exe
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.pdb
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\DangKyTiemChung.exe.config
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\DangKyTiemChung.exe
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\DangKyTiemChung.pdb
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\Microsoft.Data.Tools.Components.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\Microsoft.Data.Tools.Schema.Sql.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\Microsoft.Data.Tools.Utilities.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\Microsoft.Build.Framework.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\Microsoft.Build.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\System.Collections.Immutable.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\System.Text.Json.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\Microsoft.NET.StringTools.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\System.Memory.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\System.Buffers.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\cs\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\de\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\en\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\es\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\fr\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\it\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\ja\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\ko\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\pl\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\pt-BR\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\ru\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\tr\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\zh-Hans\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\bin\Debug\zh-Hant\Microsoft.Build.resources.dll
+C:\Users\nhoxc\Downloads\New folder (2)\dangky\DangKyTiemChung\obj\Debug\DangKyTiemChung.csproj.CopyComplete

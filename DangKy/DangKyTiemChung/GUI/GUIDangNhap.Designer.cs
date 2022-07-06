@@ -40,7 +40,8 @@ namespace DangKyTiemChung.GUI
             // taikhoan
             // 
             this.taikhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taikhoan.Location = new System.Drawing.Point(50, 168);
+            this.taikhoan.Location = new System.Drawing.Point(51, 167);
+            this.taikhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.taikhoan.Name = "taikhoan";
             this.taikhoan.Size = new System.Drawing.Size(321, 28);
             this.taikhoan.TabIndex = 0;
@@ -48,7 +49,8 @@ namespace DangKyTiemChung.GUI
             // matkhau
             // 
             this.matkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.matkhau.Location = new System.Drawing.Point(50, 270);
+            this.matkhau.Location = new System.Drawing.Point(51, 270);
+            this.matkhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.matkhau.Name = "matkhau";
             this.matkhau.PasswordChar = '*';
             this.matkhau.Size = new System.Drawing.Size(321, 28);
@@ -58,7 +60,7 @@ namespace DangKyTiemChung.GUI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 132);
+            this.label1.Location = new System.Drawing.Point(45, 132);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 24);
             this.label1.TabIndex = 2;
@@ -68,7 +70,7 @@ namespace DangKyTiemChung.GUI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(153, 24);
+            this.label2.Location = new System.Drawing.Point(153, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 32);
             this.label2.TabIndex = 3;
@@ -78,7 +80,7 @@ namespace DangKyTiemChung.GUI
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(46, 227);
+            this.label3.Location = new System.Drawing.Point(45, 226);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 24);
             this.label3.TabIndex = 4;
@@ -88,6 +90,7 @@ namespace DangKyTiemChung.GUI
             // 
             this.dn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dn.Location = new System.Drawing.Point(151, 367);
+            this.dn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dn.Name = "dn";
             this.dn.Size = new System.Drawing.Size(117, 53);
             this.dn.TabIndex = 5;
@@ -107,6 +110,7 @@ namespace DangKyTiemChung.GUI
             this.Controls.Add(this.matkhau);
             this.Controls.Add(this.taikhoan);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GUIDangNhap";

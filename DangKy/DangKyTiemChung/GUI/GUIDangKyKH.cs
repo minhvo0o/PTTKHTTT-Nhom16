@@ -73,19 +73,30 @@ namespace DangKyTiemChung.GUI
                     if (checkkh == true && checkngh == true)
                     {
                         MessageBox.Show("Thêm thành công!");
+                        this.Close();
                     }
                     else if (checkkh == true && radio_ngh.Checked == false)
                     {
                         MessageBox.Show("Thêm thành công!");
+                        this.Close();
                     }
                     else
                         MessageBox.Show("ERROR!");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("ERROR!");
+                    MessageBox.Show(ex.ToString());
                 }
             }
+        }
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_MouseClick(object sender, MouseEventArgs e)
+        {
+
         }
         private void radioButton3_Click(object sender, EventArgs e)
         {

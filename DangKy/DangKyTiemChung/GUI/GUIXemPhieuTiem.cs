@@ -19,11 +19,8 @@ namespace DangKyTiemChung.GUI
 
         private void XemPhieuTiem_Load(object sender, EventArgs e)
         {
-            string _makh = GUITraCuu.makh;
-            if (_makh == null)
-                _makh = GUIDangNhap.ma;
             DataTable dt = new DataTable();
-            PhieuTiem.LayTT_PT(_makh).Fill(dt);
+            PhieuTiem.LayTT_PT(GUITraCuu.makh).Fill(dt);
             view_phieudangky.DataSource = dt;
         }
     }

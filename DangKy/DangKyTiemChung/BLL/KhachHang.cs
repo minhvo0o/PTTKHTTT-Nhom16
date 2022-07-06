@@ -56,7 +56,7 @@ namespace DangKyTiemChung.BLL
         }
         public static SqlDataAdapter TraCuuKH(string info)
         {
-            KhachHangDB db = new KhachHangDB    ();
+            KhachHangDB db = new KhachHangDB();
             SqlDataAdapter da = db.TraCuuKH(info);
             return da;
         }

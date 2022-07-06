@@ -29,22 +29,22 @@ namespace DangKyTiemChung.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.xacnhan = new System.Windows.Forms.Button();
+            this.huy = new System.Windows.Forms.Button();
             this.them = new System.Windows.Forms.Button();
             this.view_vacxin = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.view_vacxin)).BeginInit();
             this.SuspendLayout();
             // 
-            // xacnhan
+            // huy
             // 
-            this.xacnhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xacnhan.Location = new System.Drawing.Point(462, 391);
-            this.xacnhan.Name = "xacnhan";
-            this.xacnhan.Size = new System.Drawing.Size(111, 47);
-            this.xacnhan.TabIndex = 7;
-            this.xacnhan.Text = "Xác nhận";
-            this.xacnhan.UseVisualStyleBackColor = true;
-            this.xacnhan.Click += new System.EventHandler(this.huy_Click);
+            this.huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.huy.Location = new System.Drawing.Point(462, 391);
+            this.huy.Name = "huy";
+            this.huy.Size = new System.Drawing.Size(111, 47);
+            this.huy.TabIndex = 7;
+            this.huy.Text = "Hủy";
+            this.huy.UseVisualStyleBackColor = true;
+            this.huy.Click += new System.EventHandler(this.huy_Click);
             // 
             // them
             // 
@@ -70,14 +70,15 @@ namespace DangKyTiemChung.GUI
             this.view_vacxin.RowTemplate.Height = 24;
             this.view_vacxin.Size = new System.Drawing.Size(690, 307);
             this.view_vacxin.TabIndex = 4;
-            this.view_vacxin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_vacxin_CellClick);
+            this.view_vacxin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.view_vacxin.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // MHVacXin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.xacnhan);
+            this.Controls.Add(this.huy);
             this.Controls.Add(this.them);
             this.Controls.Add(this.view_vacxin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -94,7 +95,7 @@ namespace DangKyTiemChung.GUI
 
         #endregion
 
-        private System.Windows.Forms.Button xacnhan;
+        private System.Windows.Forms.Button huy;
         private System.Windows.Forms.Button them;
         private System.Windows.Forms.DataGridView view_vacxin;
     }

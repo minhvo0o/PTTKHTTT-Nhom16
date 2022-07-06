@@ -29,22 +29,22 @@ namespace DangKyTiemChung.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.xacnhan = new System.Windows.Forms.Button();
+            this.huy = new System.Windows.Forms.Button();
             this.them = new System.Windows.Forms.Button();
             this.view_goitiem = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.view_goitiem)).BeginInit();
             this.SuspendLayout();
             // 
-            // xacnhan
+            // huy
             // 
-            this.xacnhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xacnhan.Location = new System.Drawing.Point(465, 391);
-            this.xacnhan.Name = "xacnhan";
-            this.xacnhan.Size = new System.Drawing.Size(111, 47);
-            this.xacnhan.TabIndex = 10;
-            this.xacnhan.Text = "Xác nhận";
-            this.xacnhan.UseVisualStyleBackColor = true;
-            this.xacnhan.Click += new System.EventHandler(this.huy_Click);
+            this.huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.huy.Location = new System.Drawing.Point(465, 391);
+            this.huy.Name = "huy";
+            this.huy.Size = new System.Drawing.Size(111, 47);
+            this.huy.TabIndex = 10;
+            this.huy.Text = "Hủy";
+            this.huy.UseVisualStyleBackColor = true;
+            this.huy.Click += new System.EventHandler(this.huy_Click);
             // 
             // them
             // 
@@ -70,14 +70,14 @@ namespace DangKyTiemChung.GUI
             this.view_goitiem.RowTemplate.Height = 24;
             this.view_goitiem.Size = new System.Drawing.Size(690, 307);
             this.view_goitiem.TabIndex = 8;
-            this.view_goitiem.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_goitiem_CellClick);
+            this.view_goitiem.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // MHGoiTiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.xacnhan);
+            this.Controls.Add(this.huy);
             this.Controls.Add(this.them);
             this.Controls.Add(this.view_goitiem);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -95,7 +95,7 @@ namespace DangKyTiemChung.GUI
 
         #endregion
 
-        private System.Windows.Forms.Button xacnhan;
+        private System.Windows.Forms.Button huy;
         private System.Windows.Forms.Button them;
         private System.Windows.Forms.DataGridView view_goitiem;
     }

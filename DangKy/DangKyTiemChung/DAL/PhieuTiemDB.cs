@@ -9,7 +9,8 @@ using DangKyTiemChung.BLL;
 namespace DangKyTiemChung.DAL
 {
     public class PhieuTiemDB
-    {      
+    {
+        //Dang ky tiem chung
         public SqlDataAdapter LayThongTin(string makh)
         {
             ConnectionDB db = new ConnectionDB();
@@ -28,7 +29,7 @@ namespace DangKyTiemChung.DAL
             string sql = "INSERT INTO PHIEUDANGKYTIEMCHUNG VALUES (@mapt,@makh,0,0,@thoigiantiem)";
             SqlCommand com = new SqlCommand(sql, db.sqlCon);
             com.Parameters.AddWithValue("@makh", pt._makh);
-            com.Parameters.AddWithValue("@mapt", pt._mapt);
+            com.Parameters.AddWithValue("@mapt", pt._madk);
             com.Parameters.AddWithValue("@thoigiantiem", pt._thoigiantiem);
             com.CommandType = CommandType.Text;
             int rowCount = com.ExecuteNonQuery();
@@ -42,7 +43,7 @@ namespace DangKyTiemChung.DAL
             db.connectSql();
             string sql = "INSERT INTO CT_DANGKI_VACXIN VALUES (@mapt,@mavx)";
             SqlCommand com = new SqlCommand(sql, db.sqlCon);
-            com.Parameters.AddWithValue("@mapt", pt._mapt);
+            com.Parameters.AddWithValue("@mapt", pt._madk);
             com.Parameters.AddWithValue("@mavx", pt._vacxin[index]._mavx);
             com.CommandType = CommandType.Text;
             int rowCount = com.ExecuteNonQuery();
@@ -56,7 +57,7 @@ namespace DangKyTiemChung.DAL
             db.connectSql();
             string sql = "INSERT INTO CT_DANGKI_GOITIEM VALUES (@mapt,@magtc)";
             SqlCommand com = new SqlCommand(sql, db.sqlCon);
-            com.Parameters.AddWithValue("@mapt", pt._mapt);
+            com.Parameters.AddWithValue("@mapt", pt._madk);
             com.Parameters.AddWithValue("@magtc", pt._goitiem[index]._magoi);
             com.CommandType = CommandType.Text;
             int rowCount = com.ExecuteNonQuery();
@@ -76,6 +77,43 @@ namespace DangKyTiemChung.DAL
             reader.Read();
             count = reader.GetInt32(0);
             return count + 200;
+        }
+
+        //Tiem chung
+        public SqlDataAdapter selectDSPhieuDKTiem()
+        {
+            ConnectionDB db = new ConnectionDB();
+            db.connectSql();
+            string sql = "Select * from PHIEUDANGKYTIEMCHUNG";
+            SqlCommand com = new SqlCommand(sql, db.sqlCon);
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            return da;
+        }
+
+        public SqlDataAdapter selectDSPhieuDKTiem(String maKH)
+        {
+            ConnectionDB db = new ConnectionDB();
+            db.connectSql();
+            string sql = "Select * from PHIEUDANGKYTIEMCHUNG";
+            SqlCommand com = new SqlCommand(sql, db.sqlCon);
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            return da;
+        }
+
+        public bool updatePhieuDKTiem(bool duocTiem, bool daTiem, String maDK)
+        {
+            ConnectionDB db = new ConnectionDB();
+            db.connectSql();
+            string sql = "UPDATE dbo.PHIEUDANGKYTIEMCHUNG SET DUOCTIEM = @DUOCTIEM, DATIEM = @DATIEM WHERE MADK = @MADK";
+            SqlCommand com = new SqlCommand(sql, db.sqlCon);
+            com.Parameters.AddWithValue("@DUOCTIEM", duocTiem);
+            com.Parameters.AddWithValue("@DATIEM", daTiem);
+            com.Parameters.AddWithValue("@MADK", maDK);
+            com.CommandType = CommandType.Text;
+            int rowCount = com.ExecuteNonQuery();
+            if (rowCount > 0)
+                return true;
+            return false;
         }
     }
 }

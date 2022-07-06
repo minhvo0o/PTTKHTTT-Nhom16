@@ -29,6 +29,11 @@ namespace DangKyTiemChung.GUI
             view_vacxin.DataSource = dt;
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void them_Click(object sender, EventArgs e)
         {
             if (!String.IsNullOrEmpty(mavx))
@@ -51,12 +56,7 @@ namespace DangKyTiemChung.GUI
             }
         }
 
-        private void huy_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void view_vacxin_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -69,10 +69,15 @@ namespace DangKyTiemChung.GUI
                     giatien = Int32.Parse(view_vacxin.Rows[e.RowIndex].Cells["GiaTien"].FormattedValue.ToString());
                 }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
 
             }
+        }
+
+        private void huy_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
